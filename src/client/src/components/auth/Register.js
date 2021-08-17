@@ -46,6 +46,8 @@ const Register = ({ setAlert, register }) => {
         <div className="form-group">
           <input
             type="email"
+            autoComplete="new-email"
+            ng-hide="true"
             placeholder="Email Address"
             name="email"
             value={email}
@@ -59,6 +61,8 @@ const Register = ({ setAlert, register }) => {
         <div className="form-group">
           <input
             type="password"
+            autoComplete="new-password"
+            ng-hide="true"
             placeholder="Password"
             name="password"
             value={password}
@@ -68,6 +72,8 @@ const Register = ({ setAlert, register }) => {
         <div className="form-group">
           <input
             type="password"
+            autoComplete="new-password"
+            ng-hide="true"
             placeholder="Confirm Password"
             name="password2"
             value={password2}
